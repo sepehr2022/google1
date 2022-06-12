@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif , 'arial';
+    font-size: 16px;
+    text-align: center;
+    background-color: #001427;
+}
+svg text{
+    font-size: 50px;
+    font-weight: 700;   
+    stroke-width: 2;
+    animation: anim 5s both  ;
+}
+@keyframes anim{
+    0%{
+        stroke: gold;    
+        stroke-dasharray: 0 50%;
+    }
+    100%{
+        stroke: aqua;
+        stroke-dasharray: 50% 0;
+    }
+}
+span{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .main{
+    width: 500px;
+    margin: 0 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section .main .searchbx{
+    
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+section .main .searchbx .query{
+    width: 85%;
+    font-family: b koodak;
+    font-weight: bold;
+    padding: 13px;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    padding-left: 55px;
+}
+section .main .searchbx .icons{
+    position: absolute;
+    top: 0;
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    align-items: center;
+    pointer-events: none;
+}
+section .icons .main .searchbx img{
+    max-width: 100%;
+}
+::placeholder{
+    font-family: sans-serif;
+}
+.searchbtn{
+    margin: 0 5px;
+    margin-top: 20px;
+    padding: 12px 20px;
+    color: #555;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    outline: none;
+}
+.searchbtn:hover{
+    border: 1px solid #ccc;
+}
+@media (max-width:900px){
+    section .main{
+        width: 75%;
+    }
+}

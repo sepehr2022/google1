@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <br><br>
+   <svg>
+    <text x="50%" y="50%" fill="transparent" text-anchor="middle">
+        Creat By
+    </text>
+</svg>
+    <svg>
+        <text  x="50%" y="50%" fill="transparent" text-anchor="middle">
+            Sepehr
+        </text>
+    </svg>
+    <section>
+        <div class="main">
+            <span style="color: blue;">G</span>
+            <span style="color: red;">O</span>
+            <span style="color: yellow;">O</span>
+            <span style="color: blue;">G</span>
+            <span style="color: green;">L</span>
+            <span style="color: red;">E</span>
+            <br>
+            <br>
+            <br>
+            <div class="searchbx">
+                <input type="text" name=" " class="query" placeholder="Search Google Or Type a URL">
+                <div class="icons">
+                    <dir><img src="search.png" alt="" width="27vw"></dir>
+                    <div><img src="mic.png" alt="" width="40px" height="43vh" style="margin-top: -10px; "></div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="button">
+                <button class="searchbtn">Google Search</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        let query =document.querySelector('.query');
+        let searchbtn =document.querySelector('.searchbtn');
+        searchbtn.onclick = function(){
+            let URL ='https://www.google.com/search?q='+query.value;
+            window.open(URL);
+        }
+    </script>
+</body>
+</html>
